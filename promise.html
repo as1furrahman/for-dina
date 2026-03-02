@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Let Me Make It Up — Dina 🌷</title>
+    <meta name="description" content="Choose how I can make it up to you.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌷</text></svg>">
+</head>
+
+<body>
+
+    <!-- Floating Particles -->
+    <div class="particles-container"></div>
+
+    <!-- Page Transition -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="page-container">
+
+        <h2 class="fade-in-up">Let me make it up to you 💛</h2>
+        <p class="subtitle fade-in-up delay-1">Pick your favorites, Dina!</p>
+
+        <!-- Section 1: Gift -->
+        <div class="choice-section" style="opacity: 0;">
+            <div class="spacer-md"></div>
+            <h3>🎁 What would make you smile?</h3>
+            <div class="spacer-sm"></div>
+            <div class="choices-grid choice-group" data-key="gift">
+                <div class="choice-item">
+                    <span class="choice-emoji">🌸</span>
+                    <span class="choice-label">Flowers</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">🍫</span>
+                    <span class="choice-label">Chocolates</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">💌</span>
+                    <span class="choice-label">A Handwritten Note</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">🧸</span>
+                    <span class="choice-label">Teddy Bear</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Place -->
+        <div class="choice-section" style="opacity: 0;">
+            <div class="spacer-md"></div>
+            <h3>📍 Where should we hang out?</h3>
+            <div class="spacer-sm"></div>
+            <div class="choices-grid choice-group" data-key="place">
+                <div class="choice-item">
+                    <span class="choice-emoji">🍵</span>
+                    <span class="choice-label">Tea Estates</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">☕</span>
+                    <span class="choice-label">Café</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">🎬</span>
+                    <span class="choice-label">Movies</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">🛍️</span>
+                    <span class="choice-label">Shopping</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Food -->
+        <div class="choice-section" style="opacity: 0;">
+            <div class="spacer-md"></div>
+            <h3>🍽️ What should we eat?</h3>
+            <div class="spacer-sm"></div>
+            <div class="choices-grid choice-group" data-key="food">
+                <div class="choice-item">
+                    <span class="choice-emoji">🍕</span>
+                    <span class="choice-label">Pizza</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">🍜</span>
+                    <span class="choice-label">Noodles</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">🍰</span>
+                    <span class="choice-label">Cake</span>
+                </div>
+                <div class="choice-item">
+                    <span class="choice-emoji">🍦</span>
+                    <span class="choice-label">Ice Cream</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Feedback -->
+        <div class="choice-section" style="opacity: 0;">
+            <div class="spacer-md"></div>
+            <h3>💬 Anything you want to say to me?</h3>
+            <p class="subtitle" style="font-size: 0.9rem; margin-top: 4px;">This is your space, Dina. Say whatever you
+                feel. 💛</p>
+            <div class="spacer-sm"></div>
+            <div class="card" style="padding: 20px;">
+                <textarea id="dina-feedback" rows="4" placeholder="Type your message here..." style="width: 100%; border: 2px solid var(--color-primary-light); border-radius: var(--radius-sm); 
+                    padding: 16px; font-family: var(--font-body); font-size: 0.95rem; color: var(--color-text); 
+                    background: var(--bg-secondary); resize: vertical; outline: none; transition: border-color 0.3s;
+                    line-height: 1.7;" onfocus="this.style.borderColor='var(--color-primary)'"
+                    onblur="this.style.borderColor='var(--color-primary-light)'"></textarea>
+            </div>
+        </div>
+
+        <!-- Music -->
+        <div class="spacer-md"></div>
+        <div class="music-label fade-in-up delay-2">
+            🎵 Your favorite song...
+        </div>
+        <div class="music-container fade-in-up delay-2">
+            <iframe src="https://www.youtube.com/embed/tkmUTJGkaJA?autoplay=0&loop=1" title="Abar Dekha Hole"
+                allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Next Button (hidden until all choices made) -->
+        <div class="spacer-md"></div>
+        <div class="promise-next-btn" style="opacity: 0; visibility: hidden;">
+            <a href="#" id="btn-next-final" class="btn btn-primary">
+                One last thing... 💛
+            </a>
+        </div>
+
+        <div class="spacer-lg"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/promise.js"></script>
+</body>
+
+</html>

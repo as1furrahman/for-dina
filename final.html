@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Will You Forgive Me, Dina? 💛</title>
+    <meta name="description" content="The final question — will you forgive me?">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💛</text></svg>">
+</head>
+
+<body>
+
+    <!-- Floating Particles -->
+    <div class="particles-container"></div>
+
+    <!-- Page Transition -->
+    <div class="page-transition-overlay"></div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas" class="confetti-canvas" style="display: none;"></canvas>
+
+    <!-- Main Content -->
+    <div class="page-container">
+
+        <!-- Bouquet Image -->
+        <img src="img/flowers_bouquet.png" alt="Lily flowers for you" class="hero-image fade-in-up"
+            style="width: clamp(160px, 40vw, 240px);">
+
+        <!-- Question -->
+        <div class="final-question">
+            <h1 class="fade-in-up delay-1">Will you forgive me, Dina?</h1>
+            <p class="fade-in-up delay-2" style="margin-bottom: 12px;">
+                I promise to always speak with kindness and treat you the way you truly deserve. 💛
+            </p>
+        </div>
+
+        <!-- Summary of Choices -->
+        <div id="choices-summary" class="summary-container fade-in-up delay-3">
+            <p style="color: var(--color-text-light); font-size: 0.9rem; font-style: italic;">
+                Our plans will show up here... 💫
+            </p>
+        </div>
+
+        <!-- Forgive Buttons -->
+        <div class="forgive-buttons fade-in-up delay-4">
+            <a href="#" id="final-btn-yes" class="btn btn-primary pulse-glow">
+                Yes, I forgive you 💛
+            </a>
+            <a href="#" id="final-btn-no" class="btn btn-secondary btn-small btn-no">
+                No
+            </a>
+        </div>
+
+        <!-- Success State (hidden) -->
+        <div class="success-container">
+            <div class="success-heart">💛</div>
+            <h1 style="color: var(--color-primary);">Thank You, Dina! 🥹</h1>
+            <img src="img/together_happy.png" alt="A new path forward" class="hero-image"
+                style="width: clamp(180px, 50vw, 260px);">
+            <div class="card" style="max-width: 420px;">
+                <p style="font-size: 1.05rem; line-height: 1.9; text-align: center;">
+                    Thank you for giving me another chance.
+                    <br><br>
+                    I promise to always choose my words carefully, to respect you, and to be someone who makes you feel
+                    appreciated — never the opposite.
+                    <br><br>
+                    You are truly one of the most special people I know, Fahima Khanom Roshni — and I will always value
+                    having you in my life. 💛
+                </p>
+                <div class="letter-signature">
+                    — With gratitude, Asif 💛
+                </div>
+            </div>
+
+            <div class="spacer-md"></div>
+            <a href="index.html" class="btn btn-secondary btn-small">
+                Start from the beginning 🔄
+            </a>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/final.js"></script>
+</body>
+
+</html>
