@@ -86,7 +86,7 @@ function sendFeedbackToBackend(choicesData) {
 
     // Send via Web3Forms (free, no signup needed)
     const formData = new FormData();
-    formData.append('access_key', 'YOUR_WEB3FORMS_KEY'); // Replace with your key from web3forms.com
+    formData.append('access_key', 'ca357abc-35be-4f25-b7ae-ec975339a47f');
     formData.append('subject', '💛 Dina responded to your apology!');
     formData.append('from_name', 'Dina\'s Apology Page');
     formData.append('Forgiven', forgiven);
